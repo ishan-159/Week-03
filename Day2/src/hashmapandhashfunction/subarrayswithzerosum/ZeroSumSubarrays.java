@@ -4,7 +4,7 @@ import java.util.*;
 
 class ZeroSumSubarrays {
 
-    // Function to find and print all subarrays with zero sum
+    // Method to find and print all subarrays with zero sum
     public static void findZeroSumSubarrays(int[] arr) {
         // Map to store cumulative sum and corresponding indices
         Map<Integer, List<Integer>> sumMap = new HashMap<>();
@@ -15,7 +15,6 @@ class ZeroSumSubarrays {
         // List to store pairs of subarrays
         List<int[]> result = new ArrayList<>();
 
-        // Add base case: sum 0 at index -1
         sumMap.put(0, new ArrayList<>());
         sumMap.get(0).add(-1);
 
